@@ -1,2 +1,2 @@
 SELECT *
-FROM {{ source('source', 'raw_json') }}
+FROM {{ ref('pyraw') }}
