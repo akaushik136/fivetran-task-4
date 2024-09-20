@@ -1,0 +1,13 @@
+version: 2
+sources:
+  - name: source
+    schema: DBT_AKAUSHIK
+    database: FIVETRAN_TASK_3
+    description: raw json data
+    freshness:
+      warn_after:
+        count: 24
+        period: hour
+    tables:
+      - name: raw_json
+        description: JSON data on COVID 19 deaths
